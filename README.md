@@ -35,8 +35,20 @@ On each unit's turn, they can take one **Action**. The options for an **Action**
 ### Object Interactions
 The unit interacts with an object in its **Inventory**, or interacts with something in the environment, such as picking up an **Item** or doing a **Hack**. For the tutorial, you can find and pick up a **Fire Extinguisher**, as well as do a **Hack**. 
 
+### Hacking
+
+On **Consoles**, an adjacent unit can perform a **Hack** to do certain things, like open doors. Each **Hack** is a timed puzzle. I have not decided what the puzzle is. 
+
 ## Story
+
+The demo story is just the introduction to a larger story. You are a criminal (unspecified as to what kind) in a far-off galaxy that is in the slow process of colliding with another galaxy. The galaxy is currently a mess of lawlessness, as an intergalactic war sprawls between the **ALLIANCE** and the **THUL**. The **ALLIANCE** is a majority human-like-based civilization, which is technically the "good guy", but suffers greatly from racism against other alien species and classism. The **THUL** are bug-like alien hive-minds with a thirst for conquering. They pilot their galaxy into others (via **DARK MATTER ENGINES**, see [dark electromagnetism](https://en.wikipedia.org/wiki/Dark_radiation)) to cannibalize it for resources. 
+
+You start as a prisoner of the **ALLIANCE**, who is then given the choice to either rot in prison or volunteer for a mission to retrieve a data stick from the **THUL**. You learn that the **THUL** recently raided a research lab of the company **TACHYON**. The company was hired by the **ALLIANCE** government and thus holds important data for the **ALLIANCE**, which it wants back. But if they can't get back, they will destroy the **THUL BRIG** that holds it. The **ALLIANCE** does not want to risk its own soldiers, so it uses prisoners. You choose to accept, meeting your fellow party members **KEYS** (a daredevil humanoid alien woman pilot, known for her reckless piloting and illegal black hole slingshotting), **MARCY 11** (a malfunctioning battlebot Mark 11), and **JEFF BOMBLE** (a dwarf asteroid demolitionist). You are sent to the **THUL BRIG** in a giant metal ball that crashes through and automatically forms a seal. Inside, you have limited time before the **ALLIANCE** blows up the ship. Inside is fire and alarms. You make your way through the ship to get to the computer room, grabbing the data stick. You have one final fight before escaping in an escape pod. You get an incoming transmission from the **ALLIANCE CRUISER**, asking you to identify yourselves. You then have the choice to head back to the **ALLIANCE** or to try to lose the **CRUISER** in the escape pod, where the demo ends.
 
 ## VFX
 
 ## SFX
+
+## Demo Features
+
+### Main Menu
