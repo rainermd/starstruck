@@ -57,11 +57,14 @@ namespace starstruckGrid
 
                 foreach (var pos in bounds.allPositionsWithin)
                 {
-                    if (!tm.HasTile(pos)) continue;
+                    TileBase baseTile = tm.GetTile(pos);
+                    if (baseTile == null) continue;
+
+                    if (baseTile is not CustomTile customTile) continue;
 
                     Vector2Int key = new(pos.x, pos.y);
 
-                    // Keep only the top-most tile
+                    // Only keep top-most tile
                     if (map.ContainsKey(key)) continue;
 
                     var tileGO = Instantiate(tilePrefab, tileContainer);
@@ -77,7 +80,7 @@ namespace starstruckGrid
 
                     tile.GetComponent<SpriteRenderer>().sortingOrder = renderer.sortingOrder;
 
-                    tile.gridLocation = pos;
+                    tile.Initialize(pos, customTile.tileType);
 
                     map.Add(key, tile);
                 }
@@ -106,16 +109,10 @@ namespace starstruckGrid
             if (!map.TryGetValue(pos, out var neighbor))
                 return;
 
-            if (!IsValidStep(originTile, neighbor))
+            if (!neighbor.IsTraversableFrom(originTile, maxStepHeight))
                 return;
 
             neighbors.Add(neighbor);
-        }
-
-        private bool IsValidStep(TileData from, TileData to)
-        {
-            int heightDiff = Mathf.Abs(from.gridLocation.z - to.gridLocation.z);
-            return heightDiff <= maxStepHeight;
         }
     }
 }
